@@ -1,6 +1,12 @@
 # backup-tools
 Scripts to back up dev services
 
+* make-build-hooks.sh - create Gitlab webhooks for Jenkins Jobs with declared triggers
+
+## Requirements:
+* xq (pip3 install xq) to parse XML responses from Jenkins
+* jq (apt install jq) to parse JSON responses from Gitlab 
+
 ## Jenkins
 Save and restore Job definitions through [Jenkins CLI](https://www.jenkins.io/doc/book/managing/cli/). 
 Missing:
